@@ -5,3 +5,19 @@
 @import "font-awesome";
 @import "components/*";
 
+#signup{
+	display: none;
+	position: fixed;
+	top: 40px;
+	left: 40px; 
+	right: 40px; 
+	bottom: 40px; 
+
+	margin: 0 auto;
+
+	padding-top: 200px;
+	padding-bottom: 250px;
+	text-align: center;
+
+	background-color: teal;
+}

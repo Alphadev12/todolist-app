@@ -4,13 +4,16 @@
   </button>
     <%= link_to "Sandbox App", root_path, class: "navbar-brand" %>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    
+    <div class="ml-auto text-right">
+      <img class="rounded-circle avatar" height="50px" width="50px" src="http://digitalspyuk.cdnds.net/17/25/320x320/square-1498216547-avatar-neytiri.jpg">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 dropdown-content">
 
       <% unless user_signed_in? %>
       <li class="nav-item">
         <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" id="btn-signup">
         <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
       </li>
       <% else %>
@@ -23,6 +26,9 @@
       </li>
       
     </ul>
-        <img class="rounded-circle" height="50px" width="50px" src="http://digitalspyuk.cdnds.net/17/25/320x320/square-1498216547-avatar-neytiri.jpg">
+        
+    </div>
+
+    
   </div>
 </nav>
